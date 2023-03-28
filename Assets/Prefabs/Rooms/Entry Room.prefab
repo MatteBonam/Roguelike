@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 3
   spawned: 0
+  despawnTime: 3
 --- !u!1 &258079819007225073
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 1
   spawned: 0
+  despawnTime: 3
 --- !u!1 &2802765076606954135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 2
   spawned: 0
+  despawnTime: 3
 --- !u!1 &5121205286091925362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 0
   spawned: 1
+  despawnTime: 3
 --- !u!1 &5410395569382774480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,6 +2843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 4
   spawned: 0
+  despawnTime: 3
 --- !u!1 &9126006642490406539
 GameObject:
   m_ObjectHideFlags: 0

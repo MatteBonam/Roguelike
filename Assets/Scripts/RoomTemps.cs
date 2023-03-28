@@ -10,4 +10,21 @@ public class RoomTemps : MonoBehaviour
     public GameObject[] rightRooms;
 
     public GameObject closedRoom;
+    public List<GameObject> rooms;
+
+    public float waitTime;
+    public GameObject boss;
+    public int maxRooms;
+
+    void Start()
+    {
+        StartCoroutine(SpawnBoss());
+    }
+
+    IEnumerator SpawnBoss()
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        Instantiate(boss, rooms[rooms.Count - 1].transform.position, Quaternion.identity);
+    }
 }

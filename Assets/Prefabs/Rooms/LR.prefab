@@ -933,6 +933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090382764738637138}
+  - component: {fileID: -7063904027868969532}
   m_Layer: 0
   m_Name: LR
   m_TagString: Untagged
@@ -958,6 +959,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7063904027868969532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2937428168724807520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8659c8c73261347a545fe371d962d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3032469767059281006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 4
   spawned: 0
+  despawnTime: 3
 --- !u!1 &3929112907135297495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +2401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openingDir: 3
   spawned: 0
+  despawnTime: 3
 --- !u!1 &7206695190210774648
 GameObject:
   m_ObjectHideFlags: 0
