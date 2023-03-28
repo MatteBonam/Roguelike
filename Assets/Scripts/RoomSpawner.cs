@@ -15,14 +15,7 @@ public class RoomSpawner : MonoBehaviour
     private void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemps>();
-        if (openingDir == 0)
-        {
-            spawned = true;
-        }
-        else
-        {
-            Invoke("Spawn", 0.1f);   
-        }
+        Invoke("Spawn", 0.1f);
     }
 
     private void Spawn()
@@ -55,9 +48,14 @@ public class RoomSpawner : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("SpawnPoint") && other.GetComponent<RoomSpawner>().spawned == true)
+        if (other.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            if (other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                Instantiate(templates.closedRoom, transform.position, templates.closedRoom.transform.rotation);
+                Destroy(gameObject);
+            }
+            spawned = true;
         }
     }
 }
